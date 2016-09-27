@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Vari├íveis */
+/* Classes e IDs pr├®vios */
+* {
+  box-sizing: border-box; }
+
+.all_display, body, body section, body article, body footer {
+  width: 100%;
+  margin: 0; }
+
+.center_element {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* body */
+body {
+  height: 100%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  /* classes de div */
+  /* class de ul */ }
+  body nav {
+    position: relative;
+    display: block;
+    overflow: auto;
+    width: 100%;
+    z-index: 30;
+    background-color: #FFFFFF;
+    border-bottom: 7px solid #F29100;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19); }
+    body nav a {
+      display: block;
+      color: #002F63;
+      padding: 8px;
+      text-decoration: none; }
+      body nav a:hover {
+        color: #F29100; }
+    body nav ul {
+      padding: 0;
+      margin: 0 auto 0 auto; }
+    body nav li {
+      display: inline-block;
+      padding-right: 1px;
+      padding-bottom: 1px; }
+  body section {
+    float: left;
+    overflow: auto;
+    margin: 0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19); }
+  body article {
+    float: left; }
+  body footer {
+    background-color: #002F63;
+    padding: 1% 5px 5px 5px;
+    color: white;
+    clear: both;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19); }
+    body footer ul {
+      display: inline-block;
+      margin: 0 0 0 0;
+      vertical-align: middle; }
+    body footer li {
+      float: left;
+      padding-right: 7px; }
+    body footer p {
+      display: inline;
+      margin: 0 0 5px 0; }
+  body h4 {
+    margin: 0;
+    padding: 0; }
+  body br {
+    display: block;
+    margin: 5px 0; }
+  body .corpo, body article {
+    overflow: auto;
+    padding: 15px 0 25px 0; }
+  body .center_box {
+    margin: 0 5% 0 5%;
+    padding: 0; }
+  body .menu, body nav ul, body footer ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden; }
+
+/*# sourceMappingURL=Layout.css.map */

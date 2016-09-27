@@ -1,0 +1,148 @@
+
+/* Variáveis */
+
+$orange: #F29100;
+$blue: #002F63;
+$dark-gray: #333333;
+$gray: #404040;
+$light-gray: #7F7F7F;
+
+$font-stack: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+$margin-site: 0 16.66% 0 16.66%;
+$margin-site-mobile: 0 5% 0 5%;
+
+/* Classes e IDs prévios */
+
+* {
+    box-sizing: border-box;
+}
+
+.all_display {
+	width: 100%;
+	margin: 0;
+}
+
+.center_element {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* body */
+
+body {
+
+	@extend .all_display;
+	height: 100%;
+	font-family: $font-stack;
+	text-align: center;
+
+	nav {
+		position: relative;
+		display: block;
+		overflow: auto;
+		width: 100%;
+		z-index: 30;
+		background-color: #FFFFFF;
+		border-bottom: 7px solid $orange;
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19);
+		
+		a {
+			display: block;
+			color: $blue;
+			padding: 8px;
+			text-decoration: none;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+
+		ul {
+			@extend .menu;
+			padding: 0;
+			margin: 0 auto 0 auto;
+		}
+
+		li {
+			display: inline-block;
+			padding-right: 1px;
+			padding-bottom: 1px;
+		}
+	}
+
+	section {
+		@extend .all_display;
+		
+		float: left;
+		overflow: auto;
+		margin: 0;
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	article {
+		@extend .all_display;
+		@extend .corpo;
+
+		float: left;
+	}
+
+	footer {
+		@extend .all_display;
+
+		background-color: $blue;
+		padding: 1% 5px 5px 5px;
+		color: white;
+		clear: both;
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19);
+
+		ul {
+			@extend .menu;
+			display: inline-block;
+			margin: 0 0 0 0;
+			vertical-align: middle;
+		}
+
+		li {
+			float: left;
+			padding-right: 7px;
+		}
+		
+		p {
+			display: inline;
+			margin: 0 0 5px 0;
+		}
+
+	}
+
+	h4 {
+		margin: 0;
+		padding: 0;
+	}
+
+	br {
+   		display: block;
+   		margin: 5px 0;
+	}
+
+	/* classes de div */
+
+	.corpo {
+		overflow: auto;
+		padding: 15px 0 25px 0;
+	}
+
+	.center_box {
+		margin: $margin-site-mobile;
+		padding: 0;
+	}
+
+	/* class de ul */
+
+	.menu {
+		list-style-type: none;
+		padding: 0;
+		overflow: hidden;
+	}
+
+}
