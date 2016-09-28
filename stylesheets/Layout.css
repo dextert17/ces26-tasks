@@ -95,6 +95,12 @@ body {
   body .center_box {
     margin: 0 5% 0 5%;
     padding: 0; }
+  body .task_box {
+    margin: 0 5% 0 5%;
+    padding: 0 10px 10px 10px;
+    border: red;
+    display: inline-block;
+    box-shadow: 0 0 5px 2px #aaaaaa; }
   body .menu, body nav ul, body footer ul {
     list-style-type: none;
     padding: 0;

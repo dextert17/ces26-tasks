@@ -160,6 +160,14 @@ body {
 		padding: 0;
 	}
 
+	.task_box {
+		margin: $margin-site-mobile;
+		padding: 0 10px 10px 10px;
+		border: red;
+		display: inline-block;
+		box-shadow: 0 0 5px 2px #aaaaaa;
+	}
+
 	/* class de ul */
 
 	.menu {
