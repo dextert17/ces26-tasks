@@ -71,6 +71,24 @@ body {
   body br {
     display: block;
     margin: 5px 0; }
+  body button {
+    display: inline-block;
+    padding: 8px 13px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #F29100;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 4px #999; }
+    body button:hover {
+      background-color: #CC7A00; }
+    body button:active {
+      background-color: #CC7A00;
+      box-shadow: 0 2px #666;
+      transform: translateY(3px); }
   body .corpo, body article {
     overflow: auto;
     padding: 15px 0 25px 0; }
