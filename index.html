@@ -33,14 +33,45 @@
 			<div class="center_box">
   				<p>Página onde serão expostas as tarefas realizadas pelo aluno Mattheus Martins Jucá na disciplina de CES-26 - Desenvolvimento de Aplicações para Internet ministrada pelo Prof. Yano no Instituto Tecnológico de Aeronáutica.</p>
   			</div>
-  			<div class="center_box">
-  				<div class="task_box">
-  					<h1>TAREFA SEMANA 2</h1>
-					<p id="hello-world"></p>
-					<button type="button" onclick="hello()" id="hello">Hello</button>
-					<button type="button" onclick="bye()" style="visibility:hidden; display:none;" id="bye">Bye</button>
+
+			<div>
+				<div class="center_box">
+					<h1>TAREFAS</h1>
+					<br/>
+					<div class="col_info">
+						<h1>TAREFA SEMANA 2</h1>
+						<p id="hello-world"></p>
+						<button type="button" onclick="hello()" id="hello">Hello</button>
+						<button type="button" onclick="bye()" style="visibility:hidden; display:none;" id="bye">Bye</button>
+					</div>
+					<div class="col_info">
+						<h1>TAREFA SEMANA 3</h1>
+						<div class="col_info_intern">
+							<h3>Form com GET</h3>
+							<form action="http://localhost:3000/process_get" method="GET">
+								<br>
+								<input type="text" name="firstname" placeholder="First Name">
+								<br>
+								<input type="text" name="lastname" placeholder="Last Name">
+								<br><br>
+								<input type="submit" value="Submit">
+							</form>
+						</div>
+						<div class="col_info_intern">
+							<h3>Form com POST</h3>
+							<form action="http://localhost:3000/process_post" method="POST">
+								<br>
+								<input type="text" name="firstname" placeholder="First Name">
+								<br>
+								<input type="text" name="lastname" placeholder="Last Name">
+								<br><br>
+								<input type="submit" value="Submit">
+							</form>
+						</div>
+					</div>
 				</div>
-  			</div>
+			</div>
+
 		</article>
 
 		<footer>

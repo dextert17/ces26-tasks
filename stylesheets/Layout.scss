@@ -126,7 +126,7 @@ body {
    		margin: 5px 0;
 	}
 
-	button {
+	button, input[type=submit] {
 		display: inline-block;
   		padding: 8px 13px;
   		cursor: pointer;
@@ -148,6 +148,15 @@ body {
 		}
 	}
 
+	input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	}
+
 	/* classes de div */
 
 	.corpo {
@@ -159,13 +168,25 @@ body {
 		margin: $margin-site-mobile;
 		padding: 0;
 	}
-
-	.task_box {
-		margin: $margin-site-mobile;
-		padding: 0 10px 10px 10px;
-		border: red;
+	
+	.col_info {
+		vertical-align: top;
 		display: inline-block;
+		padding: 0 10px 10px 10px;
+		margin: 0 25px;
 		box-shadow: 0 0 5px 2px #aaaaaa;
+		max-width: 100%;
+	}
+
+	.col_info_intern {
+		@extend .col_info;
+		box-shadow: 0 0 0 0 #FFFFFF;
+
+		h3 {
+			display: inline;
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	/* class de ul */

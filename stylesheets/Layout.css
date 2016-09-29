@@ -71,7 +71,7 @@ body {
   body br {
     display: block;
     margin: 5px 0; }
-  body button {
+  body button, body input[type=submit] {
     display: inline-block;
     padding: 8px 13px;
     cursor: pointer;
@@ -83,24 +83,38 @@ body {
     border: none;
     border-radius: 7px;
     box-shadow: 0 4px #999; }
-    body button:hover {
+    body button:hover, body input[type=submit]:hover {
       background-color: #CC7A00; }
-    body button:active {
+    body button:active, body input[type=submit]:active {
       background-color: #CC7A00;
       box-shadow: 0 2px #666;
       transform: translateY(3px); }
+  body input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
   body .corpo, body article {
     overflow: auto;
     padding: 15px 0 25px 0; }
   body .center_box {
     margin: 0 5% 0 5%;
     padding: 0; }
-  body .task_box {
-    margin: 0 5% 0 5%;
-    padding: 0 10px 10px 10px;
-    border: red;
+  body .col_info, body .col_info_intern {
+    vertical-align: top;
     display: inline-block;
-    box-shadow: 0 0 5px 2px #aaaaaa; }
+    padding: 0 10px 10px 10px;
+    margin: 0 25px;
+    box-shadow: 0 0 5px 2px #aaaaaa;
+    max-width: 100%; }
+  body .col_info_intern {
+    box-shadow: 0 0 0 0 #FFFFFF; }
+    body .col_info_intern h3 {
+      display: inline;
+      margin: 0;
+      padding: 0; }
   body .menu, body nav ul, body footer ul {
     list-style-type: none;
     padding: 0;
