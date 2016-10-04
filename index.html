@@ -12,15 +12,16 @@
 		<meta name="author" content="Mattheus Jucá">
 		<meta name="description" content="Página onde serão expostas as tarefas realizadas pelo aluno Mattheus Martins Jucá na disciplina de CES-26 - Desenvolvimento de Aplicações para Internet ministrada pelo Prof. Yano no Instituto Tecnológico de Aeronáutica.">
 
-<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.css" />
 		<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css" />
 
-=======
->>>>>>> parent of 065bae9... Tarefa da Semana 4
 		<link rel="stylesheet" type="text/css" href="/stylesheets/Layout.css" />
 
+		<script src="/scripts/jquery.min.js"></script>
+		<script src="/scripts/jquery-ui.js"></script>
+
 		<script src="/scripts/semana2.js"></script>
+		<script src="/scripts/semana4.js"></script>
 
 	</head>
 
@@ -37,8 +38,8 @@
 
 		<article>
 			<div class="center_box">
-  			<p>Página onde serão expostas as tarefas realizadas pelo aluno Mattheus Martins Jucá na disciplina de CES-26 - Desenvolvimento de Aplicações para Internet ministrada pelo Prof. Yano no Instituto Tecnológico de Aeronáutica.</p>
-  		</div>
+  				<p>Página onde serão expostas as tarefas realizadas pelo aluno Mattheus Martins Jucá na disciplina de CES-26 - Desenvolvimento de Aplicações para Internet ministrada pelo Prof. Yano no Instituto Tecnológico de Aeronáutica.</p>
+  			</div>
 
 			<div>
 				<div class="center_box">
@@ -73,6 +74,43 @@
 								<br><br>
 								<input type="submit" value="Submit">
 							</form>
+						</div>
+					</div>
+					<div class="col_info">
+						<h1>TAREFA SEMANA 4</h1>
+						<div id="before_curriculum">
+							<h3>Preenchimento de Currículo</h3>
+							<form id="curriculum_form">
+								<p>Dados Pessoais</p>
+								<input id="first" class="form_input" type="text" name="nome" placeholder="Nome Completo">
+								<br>
+								<input class="form_input" type="number" name="idade" placeholder="Idade">
+								<br>
+								<select id="last_personal" name="cargo_pretendido">
+									<option value="" disabled selected>Cargo Pretendido</option>
+    							<option value="Summer">Summer</option>
+    							<option value="Estagiário">Estagiário</option>
+    							<option value="Analista">Analista</option>
+    							<option value="Coordenador">Coordenador</option>
+    							<option value="Gerente">Gerente</option>
+  							</select>
+								<p id="professional_exp" title="Escolha a experiência que considerou mais relevante na sua carreira">
+									Experiência Profissional
+									<span> (?)</span>
+								</p>
+								<input class="form_input" type="text" name="empresa" placeholder="Empresa">
+								<br>
+								<input class="form_input" type="text" name="cargo" placeholder="Cargo">
+								<br>
+								<input class="form_input" type="text" name="tempo" placeholder="Tempo na Empresa">
+								<br><br>
+								<input id="uploadButton" type="submit" value="Verifique Seu Currículo">
+							</form>
+						</div>
+						<div id="after_curriculum">
+							<h3>Currículo Preenchido</h3>	
+							<h4>Dados Pessoais</h4>
+							<button type="button" id="new_form">Cadastrar Novo</button>
 						</div>
 					</div>
 				</div>
