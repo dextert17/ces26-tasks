@@ -122,33 +122,33 @@ body {
 	}
 
 	br {
-   	display: block;
-   	margin: 5px 0;
+   		display: block;
+   		margin: 5px 0;
 	}
 
 	button, input[type=submit] {
 		display: inline-block;
-  	padding: 8px 13px;
-  	cursor: pointer;
-  	text-align: center;
-  	text-decoration: none;
-  	outline: none;
-  	color: #fff;
-  	background-color: $orange;
-  	border: none;
-  	border-radius: 7px;
-  	box-shadow: 0 4px #999;
+  		padding: 8px 13px;
+  		cursor: pointer;
+  		text-align: center;
+  		text-decoration: none;
+  		outline: none;
+  		color: #fff;
+  		background-color: $orange;
+  		border: none;
+  		border-radius: 7px;
+  		box-shadow: 0 4px #999;
 
-  	&:hover {background-color: $dark-orange}
+  		&:hover {background-color: $dark-orange}
 
 		&:active {
-  		background-color: $dark-orange;
-  		box-shadow: 0 2px #666;
-  		transform: translateY(3px);
+  			background-color: $dark-orange;
+  			box-shadow: 0 2px #666;
+  			transform: translateY(3px);
 		}
 	}
 
-	input[type=text], input[type=number], select {
+	input[type=text] {
     width: 100%;
     padding: 6px 10px;
     display: inline-block;
@@ -157,32 +157,7 @@ body {
     box-sizing: border-box;
 	}
 
-	select {
-   color: #999;
-  }
-
-	/* ID de text */
-	#professional_exp {
-		//visibility: hidden;
-		display: none;
-
-		span {
-			font-size: small;
-		}
-	}
-
-	/* ID de form */
-	#curriculum_form { 
-			input, select {
-				display: none;
-			}
-
-			#first {
-				display: inline;
-			}
-	}
-
-	/* classes e IDs de div */
+	/* classes de div */
 
 	.corpo {
 		overflow: auto;
@@ -198,7 +173,7 @@ body {
 		vertical-align: top;
 		display: inline-block;
 		padding: 0 10px 10px 10px;
-		margin: 0 25px 10px 25px;
+		margin: 0 25px;
 		box-shadow: 0 0 5px 2px #aaaaaa;
 		max-width: 100%;
 	}
@@ -212,26 +187,6 @@ body {
 			margin: 0;
 			padding: 0;
 		}
-	}
-
-	#after_curriculum { 
-		display: none;
-		text-align: left;
-		
-		p {
-			font-size: 12px;
-			line-height: 1px;
-		}
-
-		h3, h4 {
-			text-align: center;
-		}
-
-		button {
-			display:block;
-   		margin:0 auto;
-		}
-	
 	}
 
 	/* class de ul */

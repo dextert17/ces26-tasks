@@ -17,9 +17,7 @@ body {
   height: 100%;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
-  /* ID de text */
-  /* ID de form */
-  /* classes e IDs de div */
+  /* classes de div */
   /* class de ul */ }
   body nav {
     position: relative;
@@ -91,23 +89,13 @@ body {
       background-color: #CC7A00;
       box-shadow: 0 2px #666;
       transform: translateY(3px); }
-  body input[type=text], body input[type=number], body select {
+  body input[type=text] {
     width: 100%;
     padding: 6px 10px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; }
-  body select {
-    color: #999; }
-  body #professional_exp {
-    display: none; }
-    body #professional_exp span {
-      font-size: small; }
-  body #curriculum_form input, body #curriculum_form select {
-    display: none; }
-  body #curriculum_form #first {
-    display: inline; }
   body .corpo, body article {
     overflow: auto;
     padding: 15px 0 25px 0; }
@@ -118,7 +106,7 @@ body {
     vertical-align: top;
     display: inline-block;
     padding: 0 10px 10px 10px;
-    margin: 0 25px 10px 25px;
+    margin: 0 25px;
     box-shadow: 0 0 5px 2px #aaaaaa;
     max-width: 100%; }
   body .col_info_intern {
@@ -127,17 +115,6 @@ body {
       display: inline;
       margin: 0;
       padding: 0; }
-  body #after_curriculum {
-    display: none;
-    text-align: left; }
-    body #after_curriculum p {
-      font-size: 12px;
-      line-height: 1px; }
-    body #after_curriculum h3, body #after_curriculum h4 {
-      text-align: center; }
-    body #after_curriculum button {
-      display: block;
-      margin: 0 auto; }
   body .menu, body nav ul, body footer ul {
     list-style-type: none;
     padding: 0;
