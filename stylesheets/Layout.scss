@@ -78,13 +78,14 @@ body {
 		float: left;
 		overflow: auto;
 		margin: 0;
-		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19);
+		padding-top: 15px;
 	}
 
 	article {
 		@extend .all_display;
-		@extend .corpo;
-
+		
+		overflow: auto;
+		padding: 0 0 25px 0;
 		float: left;
 	}
 
@@ -217,11 +218,6 @@ body {
 	}
 
 	/* classes e IDs de div */
-
-	.corpo {
-		overflow: auto;
-		padding: 15px 0 25px 0;
-	}
 
 	.center_box {
 		margin: $margin-site-mobile;
