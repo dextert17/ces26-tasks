@@ -19,9 +19,11 @@
 
 		<script src="/scripts/jquery.min.js"></script>
 		<script src="/scripts/jquery-ui.js"></script>
+		<script src="/scripts/angular-1.0.1.min.js"></script>
 
 		<script src="/scripts/semana2.js"></script>
 		<script src="/scripts/semana4.js"></script>
+		<script src="/scripts/semana5.js"></script>
 
 	</head>
 
@@ -38,8 +40,8 @@
 
 		<article>
 			<div class="center_box">
-  				<p>Página onde serão expostas as tarefas realizadas pelo aluno Mattheus Martins Jucá na disciplina de CES-26 - Desenvolvimento de Aplicações para Internet ministrada pelo Prof. Yano no Instituto Tecnológico de Aeronáutica.</p>
-  			</div>
+  			<p>Página onde serão expostas as tarefas realizadas pelo aluno Mattheus Martins Jucá na disciplina de CES-26 - Desenvolvimento de Aplicações para Internet ministrada pelo Prof. Yano no Instituto Tecnológico de Aeronáutica.</p>
+  		</div>
 
 			<div>
 				<div class="center_box">
@@ -114,11 +116,28 @@
 						</div>
 					</div>
 				</div>
-				<div class="col_info">
+				<div class="col_info" ng-app>
 					<h1>TAREFA SEMANA 5</h1>
-					<i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
-					<span class="sr-only">Loading...</span>
-					<p>Tarefa em produção, volte em breve</p>
+        	<div ng-controller="PalindromoController">
+        		<form id="palindromo_form">
+      				<input type="text" name="palindromo" placeholder="Escreva um palíndromo" ng-model="new_palindromo">
+      				<br><br>
+      				<button ng-click="verifyString()">Adicionar Palíndromo</button>
+    				</form>
+    				<br><br>
+        		<table>
+          		<thead>
+            		<tr>
+              		<th>Palíndromos</th>
+            		</tr>
+          		</thead>
+          		<tbody>
+            		<tr ng-repeat="word in palindromos">
+              		<td>{{ word.palindromo }}</td>
+            		</tr>
+          		</tbody>
+        		</table>
+    			</div>
 				</div>
 				<div class="col_info">
 					<h1>TAREFA SEMANA 6</h1>

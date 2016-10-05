@@ -134,6 +134,7 @@ body {
   	text-decoration: none;
   	outline: none;
   	color: #fff;
+  	font-weight: bold;
   	background-color: $orange;
   	border: none;
   	border-radius: 7px;
@@ -161,6 +162,21 @@ body {
    color: #999;
   }
 
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    
+    th, td {
+    	padding: 8px;
+    	text-align: left;
+    	border: 1px solid #ddd;
+		}
+
+		th {background-color: #ccc}
+	
+		td:hover{background-color:#f5f5f5}
+	}
+
 	/* ID de text */
 	#professional_exp {
 		//visibility: hidden;
@@ -171,7 +187,7 @@ body {
 		}
 	}
 
-	/* ID de form */
+	/* IDs de form */
 	#curriculum_form { 
 			input, select {
 				display: none;
@@ -180,6 +196,24 @@ body {
 			#first {
 				display: inline;
 			}
+	}
+
+	#palindromo_form {
+		::-webkit-input-placeholder {
+   		text-align: center;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+   		text-align: center;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+   		text-align: center;  
+		}
+
+		:-ms-input-placeholder {  
+   		text-align: center; 
+		}
 	}
 
 	/* classes e IDs de div */
@@ -198,7 +232,7 @@ body {
 		vertical-align: top;
 		display: inline-block;
 		padding: 0 10px 10px 10px;
-		margin: 0 25px 10px 25px;
+		margin: 0 25px 25px 25px;
 		box-shadow: 0 0 5px 2px #aaaaaa;
 		max-width: 100%;
 	}
