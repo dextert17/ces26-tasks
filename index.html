@@ -19,14 +19,15 @@
 
 		<!-- Scripts do Angular2 -->
 		<!-- Polyfill(s) for older browsers -->
-		<script src="/lib/Angular2/es6-shim.min.js"></script>
-    <script src="/lib/Angular2/system-polyfills.js"></script>
-    <script src="/lib/Angular2/angular2-polyfills.js"></script>
-		<!-- Configure SystemJS -->
-    <script src="/lib/Angular2/system.js"></script>
-    <script src="/lib/Angular2/typescript.js"></script>
-    <script src="/lib/Angular2/Rx.js"></script>
-    <script src="/lib/Angular2/angular2.dev.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
 
 		<!-- Scripts de jQuery -->
 		<script src="/lib/jquery/jquery.min.js"></script>
@@ -39,7 +40,6 @@
 		<script src="/scripts/semana2.js"></script>
 		<script src="/scripts/semana4.js"></script>
 		<script src="/scripts/semana5.js"></script>
-		<script src="/scripts/semana6.js"></script>
 
 	</head>
 
