@@ -20,7 +20,8 @@ var HeroDetailComponent = (function () {
     HeroDetailComponent = __decorate([
         core_1.Component({
             selector: 'my-hero-detail',
-            template: "\n  \t<div *ngIf=\"hero\">\n    \t<h2>{{hero.name}} details!</h2>\n    \t<div><label>id: </label>{{hero.id}}</div>\n    \t<div>\n     \t \t<label>name: </label>\n     \t \t<input [(ngModel)]=\"hero.name\" placeholder=\"name\"/>\n    \t</div>\n  \t</div>\n\t"
+            template: "\n  \t<div *ngIf=\"hero\">\n    \t<h2>{{hero.name}} details!</h2>\n      <div class=\"details\">\n    \t  <div><label>id: </label>{{hero.id}}</div>\n    \t  <div>\n     \t \t  <label>name: </label>\n     \t \t  <input [(ngModel)]=\"hero.name\" placeholder=\"name\"/>\n    \t  </div>\n      </div>\n  \t</div>\n\t",
+            styles: ["\n    .details {\n      vertical-align: top;\n      display: inline-block;\n      padding: 0 10px 10px 10px;\n      margin: 0 25px 25px 25px;\n      max-width: 100%;\n      text-align: left;\n    }\n    .details input {\n      padding: 6px 10px;\n      display: inline-block;\n      border: 1px solid #ccc;\n      border-radius: 4px;\n      box-sizing: border-box;\n    }\n    .details label {\n      display: inline-block;\n      width: 50px;\n    }\n  "]
         }), 
         __metadata('design:paramtypes', [])
     ], HeroDetailComponent);

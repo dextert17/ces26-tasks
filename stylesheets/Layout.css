@@ -17,7 +17,8 @@ body {
   height: 100%;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
-  /* ID de text */
+  /* classes e IDs de text */
+  /* IDs de link */
   /* IDs de form */
   /* classes e IDs de div */
   /* class de ul */ }
@@ -118,6 +119,28 @@ body {
     display: none; }
     body #professional_exp span {
       font-size: small; }
+  body #copyright {
+    font-size: 10px; }
+  body .footer_link_text {
+    color: #002F63; }
+    body .footer_link_text:hover {
+      color: white; }
+  body .footer_link_github_text {
+    color: white; }
+    body .footer_link_github_text:hover {
+      color: black; }
+  body #link_github {
+    color: white; }
+    body #link_github:hover {
+      color: #CCCCCC; }
+  body #link_linkedin {
+    color: white; }
+    body #link_linkedin:hover {
+      color: #0077B5; }
+  body #link_mail {
+    color: white; }
+    body #link_mail:hover {
+      color: #F29100; }
   body #curriculum_form input, body #curriculum_form select {
     display: none; }
   body #curriculum_form #first {

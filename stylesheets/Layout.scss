@@ -178,7 +178,7 @@ body {
 		td:hover{background-color:#f5f5f5}
 	}
 
-	/* ID de text */
+	/* classes e IDs de text */
 	#professional_exp {
 		//visibility: hidden;
 		display: none;
@@ -186,6 +186,62 @@ body {
 		span {
 			font-size: small;
 		}
+	}
+
+	#copyright {
+		font-size: 10px;
+	}
+
+	.footer_link_text {
+
+		color: $blue;
+
+		&:hover {
+			color: white;
+		}
+
+	}
+
+	.footer_link_github_text {
+
+		color: white;
+
+		&:hover {
+			color: black;
+		}
+
+	}
+
+	/* IDs de link */
+
+	#link_github {
+
+		color: white;
+
+		&:hover {
+			color: #CCCCCC;
+		}
+
+	}
+
+	#link_linkedin {
+
+		color: white;
+
+		&:hover {
+			color: #0077B5
+		}
+
+	}
+
+	#link_mail {
+
+		color: white;
+
+		&:hover {
+			color: $orange;
+		}
+
 	}
 
 	/* IDs de form */
