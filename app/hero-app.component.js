@@ -17,7 +17,7 @@ var HeroAppComponent = (function () {
     HeroAppComponent = __decorate([
         core_1.Component({
             selector: 'heroes-app',
-            template: "\n  \t<h1>{{title}}</h1>\n  \t<nav>\n  \t\t<a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n   \t\t<a routerLink=\"/heroes\" routerLinkActive=\"active\">Heros</a>\n  \t</nav>\n\t\t<router-outlet></router-outlet>\n\t",
+            template: "\n  \t<h1>{{title}}</h1>\n  \t<nav>\n  \t\t<a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n   \t\t<a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n  \t</nav>\n\t\t<router-outlet></router-outlet>\n\t",
             styleUrls: ['app/hero-app.component.css'],
             providers: [hero_service_1.HeroService]
         }), 

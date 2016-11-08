@@ -26,6 +26,6 @@ nav a:hover {
   color: #7F7F7F;
   background-color: lightblue;
 }
-nav a.active {
+nav a:active {
   color: #7F7F7F;
 }
