@@ -2,13 +2,38 @@
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
-  width:195px;
-  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 195px;
+  height: 35px;
   padding: 5px;
   background-color: white;
   cursor: pointer;
 }
+.search-result:hover {
+  background-color: lightgray;
+}
 #search-box{
   width: 200px;
-  height: 20px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#search-form {
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+  }
+
+  :-ms-input-placeholder {  
+    text-align: center; 
+  }
 }
