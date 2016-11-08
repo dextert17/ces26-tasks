@@ -1,0 +1,31 @@
+h1 {
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav {
+  border-bottom: none;
+  box-shadow: none;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #002F63;
+  border-radius: 4px;
+  color: white;
+}
+nav a:visited, a:link {
+  color: white;
+}
+nav a:hover {
+  color: #7F7F7F;
+  background-color: lightblue;
+}
+nav a.active {
+  color: #7F7F7F;
+}

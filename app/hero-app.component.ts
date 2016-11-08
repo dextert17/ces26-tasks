@@ -7,12 +7,13 @@ import { HeroService } from './hero.service';
   template: `
   	<h1>{{title}}</h1>
   	<nav>
-  		<a routerLink="/dashboard">Dashboard</a>
-   		<a routerLink="/heroes">Heros</a>
-   	</nav>
-   	<router-outlet></router-outlet>
- 	`,
- 	providers: [HeroService]
+  		<a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+   		<a routerLink="/heroes" routerLinkActive="active">Heros</a>
+  	</nav>
+		<router-outlet></router-outlet>
+	`,
+	styleUrls: [ 'app/hero-app.component.css' ],
+  providers: [HeroService]
 })
 
 export class HeroAppComponent {

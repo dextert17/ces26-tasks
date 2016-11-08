@@ -10,27 +10,7 @@ import { HeroService } from './hero.service';
   moduleId: module.id,
   selector: 'my-hero-detail',
   templateUrl: 'hero-detail.component.html',
-  styles: [`
-    .details {
-      vertical-align: top;
-      display: inline-block;
-      padding: 0 10px 10px 10px;
-      margin: 0 25px 25px 25px;
-      max-width: 100%;
-      text-align: left;
-    }
-    .details input {
-      padding: 6px 10px;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .details label {
-      display: inline-block;
-      width: 50px;
-    }
-  `]
+  styleUrls: [ 'hero-detail.component.css' ]
 })
 
 export class HeroDetailComponent implements OnInit {

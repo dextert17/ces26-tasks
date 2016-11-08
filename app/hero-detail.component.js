@@ -40,7 +40,7 @@ var HeroDetailComponent = (function () {
             moduleId: module.id,
             selector: 'my-hero-detail',
             templateUrl: 'hero-detail.component.html',
-            styles: ["\n    .details {\n      vertical-align: top;\n      display: inline-block;\n      padding: 0 10px 10px 10px;\n      margin: 0 25px 25px 25px;\n      max-width: 100%;\n      text-align: left;\n    }\n    .details input {\n      padding: 6px 10px;\n      display: inline-block;\n      border: 1px solid #ccc;\n      border-radius: 4px;\n      box-sizing: border-box;\n    }\n    .details label {\n      display: inline-block;\n      width: 50px;\n    }\n  "]
+            styleUrls: ['hero-detail.component.css']
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService, router_1.ActivatedRoute, common_1.Location])
     ], HeroDetailComponent);
