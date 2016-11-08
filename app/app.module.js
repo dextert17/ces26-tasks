@@ -11,12 +11,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
-var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var hero_app_component_1 = require('./hero-app.component');
 var dashboard_component_1 = require('./dashboard.component');
 var hero_list_component_1 = require('./hero-list.component');
 var hero_detail_component_1 = require('./hero-detail.component');
+var hero_service_1 = require('./hero.service');
+var app_routing_module_1 = require('./app-routing.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,21 +26,7 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                router_1.RouterModule.forRoot([
-                    {
-                        path: 'heroes',
-                        component: hero_list_component_1.HeroListComponent
-                    },
-                    {
-                        path: 'dashboard',
-                        component: dashboard_component_1.DashboardComponent
-                    },
-                    {
-                        path: '',
-                        redirectTo: '/dashboard',
-                        pathMatch: 'full'
-                    }
-                ])
+                app_routing_module_1.AppRoutingModule
             ],
             declarations: [
                 app_component_1.AppComponent,
@@ -51,7 +38,8 @@ var AppModule = (function () {
             bootstrap: [
                 app_component_1.AppComponent,
                 hero_app_component_1.HeroAppComponent
-            ]
+            ],
+            providers: [hero_service_1.HeroService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
