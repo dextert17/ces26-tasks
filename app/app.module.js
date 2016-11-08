@@ -11,7 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
+var hero_app_component_1 = require('./hero-app.component');
+var dashboard_component_1 = require('./dashboard.component');
 var hero_list_component_1 = require('./hero-list.component');
 var hero_detail_component_1 = require('./hero-detail.component');
 var AppModule = (function () {
@@ -21,16 +24,33 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                forms_1.FormsModule
+                forms_1.FormsModule,
+                router_1.RouterModule.forRoot([
+                    {
+                        path: 'heroes',
+                        component: hero_list_component_1.HeroListComponent
+                    },
+                    {
+                        path: 'dashboard',
+                        component: dashboard_component_1.DashboardComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: '/dashboard',
+                        pathMatch: 'full'
+                    }
+                ])
             ],
             declarations: [
                 app_component_1.AppComponent,
+                hero_app_component_1.HeroAppComponent,
+                dashboard_component_1.DashboardComponent,
                 hero_list_component_1.HeroListComponent,
                 hero_detail_component_1.HeroDetailComponent
             ],
             bootstrap: [
                 app_component_1.AppComponent,
-                hero_list_component_1.HeroListComponent
+                hero_app_component_1.HeroAppComponent
             ]
         }), 
         __metadata('design:paramtypes', [])

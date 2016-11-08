@@ -4,9 +4,8 @@ import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
-  selector: 'hero-list-app',
+  selector: 'my-heroes',
   template: `
-    <h1>{{title}}</h1>
     <h2>My Heroes</h2>
     <p>Heroes:</p>
     <ul class="heroes">
@@ -72,7 +71,6 @@ import { HeroService } from './hero.service';
 })
 
 export class HeroListComponent implements OnInit {
-  title = 'Tour of Heroes';
   selectedHero: Hero;
   heroes: Hero[];
 
